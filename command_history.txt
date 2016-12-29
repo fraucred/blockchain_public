@@ -1,0 +1,90 @@
+   49  apt-get update
+   50  apt-get install npm
+   51  node-gyp install
+   52  nodejs
+   53  node -v
+   54  apt-get update
+   55  apt-get install nodejs
+   56  apt-get clean
+   57  apt-get clear
+   58  exit
+   59  apt-get update4
+   60  apt-get update
+   61  npm
+   62  curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+   63  apt-get install -y nodejs
+   64  apt-get install -y build-essential
+   65  npm install -g ethereumjs-testrpc
+   66  git
+   67  apt-get install git
+   68  npm install -g ethereumjs-testrpc
+   69  testrpc
+   70  exit
+   71  cd Desktop/blockchain/
+   72  ls
+   73  nano contracts/HelloWorld.sol 
+   74  npm install -g truffle
+   75  apt-get install pug
+   76  npm install -g pug
+   77  npm install -g minimatch
+   78  npm install -g node-gyp
+   79  node-gyp
+   80  testrpc
+   81  ls
+   82  cd Desktop/
+   83  ls
+   84  mkdir blockchain
+   85  cd blockchain/
+   86  ls
+   87  truffle init
+   88  ls
+   89  nautilus .
+   90  ls
+   91  cd contracts/
+   92  nano HelloWorld.sol
+   93  cd ..
+   94  truffle compile
+   95  apt-get install solidity
+   96  npm install -g solc
+   97  solcjs -v
+   98  truffle compile
+   99  nano HelloWorld.sol
+  100  cd contracts/
+  101  nano HelloWorld.sol
+  102  cd ..
+  103  truffle compile
+  104  nano contracts/HelloWorld.sol 
+  105  ls
+  106  cat build/contracts/HelloWorld.sol.js 
+  107  ls migrations/
+  108  nano migrations/2_deploy_contracts.js 
+  109  nano contracts/ConvertLib.sol 
+  110  truffle migrate
+  111  truffle console
+  112  ls
+  113  cat test/metacoin.js 
+  114  nano contracts/HelloWorld.sol 
+  115  truffle compile
+  116  nano contracts/HelloWorld.sol 
+  117  truffle compile
+  118  truffle migrate
+  119  truffle compile & truffle migrate
+  120  truffle compile &² truffle migrate
+  121  truffle compile && truffle migrate
+  122  truffle migrate --reset
+  123  truffle console
+  124  truffle compile && truffle migrate --reset
+  125  truffle console
+  126  exit
+  127  mkdir Desktop/privateBC
+  128  cd Desktop/privateBC/
+  129  ls
+  130  geth
+  131  sudo apt-get install software-properties-common
+  132  apt-get update
+  133  exit
+  134  apt-get update
+  135  apt-get install software-properties-common
+  136  sudo apt autoremove
+  137  exkit
+
