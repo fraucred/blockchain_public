@@ -55,7 +55,7 @@ function smartVote() {
 
 	contract.vote(chosen_proposal,{from: account}).then(function() {
     setStatus("Vote complet!");
-	alert(console(contract.showChairperson());
+	alert(console(contract.showChairperson()));
     //refreshBalance();
   }).catch(function(e) {
     console.log(e);

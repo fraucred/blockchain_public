@@ -8058,10 +8058,10 @@ var SolidityEvent = require("web3/lib/web3/event.js");
 
 },{"web3":176,"web3/lib/web3/event.js":203}],6:[function(require,module,exports){
 module.exports = {
-  "ConvertLib": require("/home/david/Desktop/blockchain_public/build/contracts/ConvertLib.sol.js"),
-  "MetaCoin": require("/home/david/Desktop/blockchain_public/build/contracts/MetaCoin.sol.js"),
-  "HelloWorld": require("/home/david/Desktop/blockchain_public/build/contracts/HelloWorld.sol.js"),
   "Contract": require("/home/david/Desktop/blockchain_public/build/contracts/Contract.sol.js"),
+  "ConvertLib": require("/home/david/Desktop/blockchain_public/build/contracts/ConvertLib.sol.js"),
+  "HelloWorld": require("/home/david/Desktop/blockchain_public/build/contracts/HelloWorld.sol.js"),
+  "MetaCoin": require("/home/david/Desktop/blockchain_public/build/contracts/MetaCoin.sol.js"),
   "Migrations": require("/home/david/Desktop/blockchain_public/build/contracts/Migrations.sol.js"),
 };
 },{"/home/david/Desktop/blockchain_public/build/contracts/Contract.sol.js":1,"/home/david/Desktop/blockchain_public/build/contracts/ConvertLib.sol.js":2,"/home/david/Desktop/blockchain_public/build/contracts/HelloWorld.sol.js":3,"/home/david/Desktop/blockchain_public/build/contracts/MetaCoin.sol.js":4,"/home/david/Desktop/blockchain_public/build/contracts/Migrations.sol.js":5}],7:[function(require,module,exports){
@@ -45098,7 +45098,7 @@ window.addEventListener('load', function() {
 
                                                                 
 
-  [Contract,ConvertLib,HelloWorld,MetaCoin,Migrations].forEach(function(contract) {         
+  [Contract,ConvertLib,MetaCoin,HelloWorld,Migrations].forEach(function(contract) {         
 
     contract.setProvider(window.web3.currentProvider);          
 
@@ -45167,7 +45167,7 @@ function smartVote() {
 
 	contract.vote(chosen_proposal,{from: account}).then(function() {
     setStatus("Vote complet!");
-	alert(console(contract.showChairperson());
+	alert(console(contract.showChairperson()));
     //refreshBalance();
   }).catch(function(e) {
     console.log(e);
