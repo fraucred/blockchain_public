@@ -55,7 +55,4 @@ contract Contract
 				winningProposal = proposal;
 			}
 	}
-	function showChairperson() returns (address chairperson){
-		return chairperson;
-	}
 }		
