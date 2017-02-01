@@ -3,5 +3,6 @@ module.exports = function(deployer) {
   deployer.autolink();
   deployer.deploy(MetaCoin);
   deployer.deploy(HelloWorld);
-  deployer.deploy(Contract);	
+  deployer.deploy(Contract);
+  deployer.deploy(SimpleStorage);
 };
