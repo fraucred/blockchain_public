@@ -14,16 +14,19 @@
   <h2>L'application de vote en ligne</h2>
   <h3>Plusieurs options s'offrent à vous </h3>
 
-  Numéro de compte : <input type="text" id="voter" placeholder="Compte : 0x8893973864754764753863683"></input>
+  Numéro de compte à autoriser : <input type="text" id="a_voter" placeholder="Compte : 0x8893973864754764753863683"></input>
+
+</br><button id="send" onclick="allow()" >Autoriser le votant </button>
   </br>
   </br>
-  
-  <h1>Options :</h1> 
+  Numéro de compte du votant : <input type="text" id="voter" placeholder="Compte : 0x8893973864754764753863683"></input>
+  <h1>Options :</h1>
   </br> <INPUT type= "radio" name="options" id="Mitterand" style="width:20px" value="options1" class="proposal" > Options 1 : Mitterand
   </br> <INPUT type= "radio" name="options" id="De Gaulle" style="width:20px" value="options2" class="proposal" > Options 2 : De Gaulle
   </br> <INPUT type= "radio" name="options" id="Blanc" style="width:20px" value="options3" class="proposal" > Options 3 : Vote Blanc
 
   </br><button id="send" onclick="smartVote()" >Vote </button>
+  </br><button id="send" onclick="final_result()" >Obtenir le résultat du vote </button>
 <span id="status"></span>
   </br>
 </body>

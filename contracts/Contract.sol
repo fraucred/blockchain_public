@@ -14,7 +14,7 @@ contract Contract
 	{
 		uint voteCount;
 	}
-	uint256 public zeroCount = 10;
+	uint256 public zeroCount = 100;
 	address chairperson;
 	mapping (address => Voter) voters;
 	Proposal[] proposals;
@@ -31,7 +31,7 @@ contract Contract
 	//May only be called by $(chairperson).
 	function giveRightToVote(address voter)
 	{
-		//if(msg.sender != chairperson || voters[voter].voted) return;
+		if(msg.sender != chairperson || voters[voter].voted) return;
 		voters[voter].weight = 1;
 	}
 
@@ -39,7 +39,7 @@ contract Contract
 	function vote (uint8 proposal)
 	{
 		Voter sender = voters[msg.sender];
-		//if (sender.voted || proposal >= proposals.length) return;
+		if (sender.voted || proposal >= proposals.length) return;
 		sender.voted = true;
 		sender.vote = proposal;
 		proposals[proposal].voteCount += sender.weight;
@@ -52,7 +52,7 @@ contract Contract
 			if (proposals[proposal].voteCount > winningVoteCount)
 			{
 				winningVoteCount = proposals[proposal].voteCount;
-				winningProposal = proposal+1;
+				winningProposal = proposal;
 			}
 	}
 }
